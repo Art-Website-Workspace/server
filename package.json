@@ -3,14 +3,22 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "scripts":{
-    "start":"bun index.ts",
-    "dev":"nodemon"
+  "scripts": {
+    "start": "bun index.ts",
+    "dev": "nodemon"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prisma": "^7.3.0",
+    "tsx": "^4.21.0"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "@prisma/client": "^7.3.0",
+    "hono": "^4.11.8",
+    "ws": "^8.19.0"
   }
 }
